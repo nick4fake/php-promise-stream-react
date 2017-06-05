@@ -1,5 +1,5 @@
 {
-    "name": "clue/promise-stream-react",
+    "name": "nick4fake/promise-stream-react",
     "description": "The missing link between Promise-land and Stream-land for React PHP",
     "keywords": ["unwrap", "stream", "buffer", "promise", "ReactPHP", "async"],
     "homepage": "https://github.com/clue/php-promise-stream-react",
@@ -10,13 +10,16 @@
             "email": "christian@lueck.tv"
         }
     ],
+    "replace": {
+        "clue/promise-stream-react": "v1.0.0"
+    },
     "autoload": {
         "psr-4": { "Clue\\React\\Promise\\Stream\\" : "src/" },
         "files": [ "src/functions.php" ]
     },
     "require": {
         "php": ">=5.3",
-        "react/stream": "^0.4 || ^0.3",
+        "react/stream": "^1.0 || ^0.8",
         "react/promise": "^2.1 || ^1.2"
     },
     "require-dev": {
